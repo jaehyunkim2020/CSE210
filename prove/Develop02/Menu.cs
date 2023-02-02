@@ -68,6 +68,7 @@ public class Menu
             }
         }
 
+
         else if (userChoice == 4)
         {
             System.Console.WriteLine("What is the filename? (ex. 'journal.txt')");
