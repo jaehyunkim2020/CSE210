@@ -1,7 +1,6 @@
 
-public class Fraction
+class Fraction
 {
-
     private int _numerator;
     private int _denominator;
 
@@ -11,51 +10,40 @@ public class Fraction
         _denominator = 1;
     }
 
-    public Fraction(int top)
+    public Fraction(int numerator)
     {
-        _numerator = top;
         _denominator = 1;
-    }
-
-    public Fraction(int top, int bottom)
-    {
-        _numerator = top;
-        _denominator = bottom;
-    }
-
-    public void DisplayFraction()
-    {
-        System.Console.WriteLine($"{_numerator}/{_denominator}");
-    }
-
-    public void SetBottomNumber(int denominator)
-    {
-        _denominator = denominator;
-    }
-
-    public void SetTopNumber(int numerator)
-    {
         _numerator = numerator;
     }
 
-    public int GetBottomNumber()
+    public Fraction(int denominator, int numerator)
     {
-        return _denominator;
+        _denominator = denominator;
+        _numerator = numerator;
     }
 
-    public int GetTopNumber()
+    public int GetNumerator()
     {
         return _numerator;
     }
 
-    public string GetFractionString()
+    public void SetNumerator(int numerator)
     {
-        string display = $"{_numerator}/{_denominator}";
-        return display;
+        _numerator = numerator;
     }
 
-    public double GetDecimalValue()
+    public int GetDenominator()
     {
-        return (double)_numerator / (double)_denominator;
+        return _denominator;
+    }
+
+    public void SetDenominator(int denominator)
+    {
+        _denominator = denominator;
+    }
+
+    public void DisplayFraction()
+    {
+        System.Console.WriteLine($"{_numerator} / {_denominator}");
     }
 }

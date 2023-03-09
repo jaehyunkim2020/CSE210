@@ -9,13 +9,18 @@ class Program
 
         Fraction fraction2 = new Fraction(6);
         fraction2.DisplayFraction();
-        
-        Fraction fraction3 = new Fraction(6, 7);
+
+        Fraction fraction3 = new Fraction(7, 6);
         fraction3.DisplayFraction();
 
-        Fraction f1 = new Fraction();
-        f1.SetBottomNumber(5);
-        f1.SetTopNumber(4);
-        f1.DisplayFraction();
+        fraction1.SetDenominator(13);
+        fraction1.GetDenominator();
+        fraction1.SetNumerator(12);
+        fraction1.GetNumerator();
+        fraction1.DisplayFraction();
+
+        fraction1.SetDenominator(5);
+        fraction1.DisplayFraction();
+        
     }
 }
